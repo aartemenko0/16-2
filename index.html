@@ -19,6 +19,7 @@
         maxlength="20"
         pattern="^[a-zA-Zа-яА-Я ]+$"
       />
+      <span class="error-message" id="name-error"></span>
 
       <label for="email">Email:</label>
       <input
@@ -28,6 +29,7 @@
         placeholder="example@example.com"
         required
       />
+      <span class="error-message" id="email-error"></span>
 
       <label for="age">Возраст:</label>
       <input
@@ -44,6 +46,7 @@
       <label for="male">Мужчина</label>
       <input type="radio" id="female" name="gender" value="female" required />
       <label for="female">Женщина</label>
+      <span class="error-message" id="gender-error"></span>
 
       <label for="profession">Профессия:</label>
       <select id="profession" name="profession" required>
@@ -56,6 +59,7 @@
         <option value="salesman">Продавец</option>
         <option value="other">Другое</option>
       </select>
+      <span class="error-message" id="profession-error"></span>
 
       <label for="password">Пароль:</label>
       <input
@@ -67,6 +71,7 @@
         minlength="8"
         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
       />
+      <span class="error-message" id="password-error"></span>
 
       <label for="confirmPassword">Повторите пароль:</label>
       <input
@@ -78,11 +83,13 @@
         minlength="8"
         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
       />
+      <span class="error-message" id="password-error"></span>
 
       <label>
         <input type="checkbox" id="agreement" name="agreement" required />
         Согласие на обработку данных
       </label>
+      <span class="error-message" id="agreement-error"></span>
 
       <button class="button" type="submit">Зарегистрироваться</button>
     </form>
